@@ -1,75 +1,64 @@
-# React + TypeScript + Vite
+# Rio International Design Studio - Frontend Developer Assessment
+## Technical Task Submission
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a high-fidelity frontend implementation of the **Rio International Design Studio** website, developed as a technical assessment for the Frontend Developer role. The application demonstrates expertise in translating complex designs into functional, high-performance web experiences.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🚀 Highlights
 
-## React Compiler
+- **Modern UI Architecture**: Built with React 19, TypeScript, and Vite.
+- **Cutting-Edge Styling**: Powered by **Tailwind CSS v4**, using the latest `@theme` and `@layer` directives.
+- **Premium Animations**: Advanced scroll-based and entry animations using **Framer Motion**.
+- **Responsive Excellence**: A "Mobile-First" approach ensuring a seamless experience across all devices.
+- **Brand Fidelity**: Precise implementation of the Rio brand identity, including custom gradients, typography, and layout structures.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### 🛠️ Technology Stack
 
-Note: This will impact Vite dev & build performances.
+| Technology | Purpose |
+| :--- | :--- |
+| **React 19** | Core UI Library |
+| **TypeScript** | Static Type Checking |
+| **Vite** | Modern Build Tooling |
+| **Tailwind CSS v4** | Next-gen Utility Styling |
+| **Framer Motion** | Fluid Animations & Transitions |
+| **Lucide React** | Scalable Vector Icons |
 
-## Expanding the ESLint configuration
+### 📋 Task Requirements & Implementation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The task involved recreating the Rio landing page with specific attention to detail:
+1.  **Hero Section**: Dynamic entrance animations and brand-focused messaging.
+2.  **About Section**: Parallax-style background elements and clear brand identity.
+3.  **Services**: Interactive category cards with featured highlights.
+4.  **Portfolio/Works**: Responsive grid showcasing project excellence.
+5.  **Testimonials**: Organic, high-impact social proof section.
+6.  **Footer**: Comprehensive contact information with multi-region office support.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+#### Recent Refinements (Interview Feedback):
+- ✅ **Typography Scaling**: Optimized header font sizes across all sections for better visual hierarchy.
+- ✅ **Asset Optimization**: Adjusted image dimensions and aspect ratios for improved layout balance and performance.
+- ✅ **Clean Code**: Resolved Tailwind v4 specific linting warnings and optimized the base design tokens.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 📦 Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1.  **Clone the repository**:
+    ```bash
+    git clone [repository-url]
+    cd RIO_clone
+    ```
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+3.  **Run in Development mode**:
+    ```bash
+    npm run dev
+    ```
+4.  **Build for Production**:
+    ```bash
+    npm run build
+    ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+*Submitted for the consideration of the Rio International Design Studio HR and Technical Team.*
