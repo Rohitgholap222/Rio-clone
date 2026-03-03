@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-montserrat: "Montserrat", sans-serif;
+
+  --color-rio-bg: #F3F4F8;
+  --color-rio-text: #4a4a4a;
+  --color-rio-nav: #323232;
+  --color-rio-purple: #4b3069;
+  --color-rio-pink: #b6358c;
+  --color-rio-magenta: #e93382;
+  --color-rio-dark: #2e3e5c;
+  --color-rio-footer: #252525;
+
+  --background-image-rio-gradient: linear-gradient(135deg, #4b3069 0%, #b6358c 100%);
+  --background-image-logo-gradient: linear-gradient(135deg, #a831d4 0%, #e93382 100%);
+
+  /* Custom shadows to avoid arbitrary value parsing issues */
+  --shadow-service: 0 10px 40px -15px rgba(0, 0, 0, 0.05);
+  --shadow-service-hover: 0 20px 60px -15px rgba(0, 0, 0, 0.1);
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-montserrat);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-rio-bg text-rio-text overflow-x-hidden antialiased;
+  }
+
+  /* Noise Texture Overlay */
+  body::after {
+    content: "";
+    @apply fixed inset-0 pointer-events-none opacity-[0.03] z-[9999];
+    background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+    filter: contrast(150%) brightness(100%);
+  }
+
+  a {
+    @apply no-underline text-inherit transition-all duration-300;
+  }
+
+  ul {
+    @apply list-none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-rio-dark;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1240px] mx-auto px-5;
+  }
+
+  .logo-text {
+    @apply bg-logo-gradient bg-clip-text text-transparent;
+  }
+
+  .gradient-text {
+    @apply bg-rio-gradient bg-clip-text text-transparent;
+  }
+
+  .brush-stroke {
+    @apply relative inline-block;
+  }
+
+  .brush-stroke::after {
+    content: '';
+    @apply absolute -bottom-[2px] left-0 w-full h-[15px] bg-[#bc8cf2] opacity-40 rounded-full -z-10;
+    transform: rotate(-1deg);
+  }
+
+  .service-card {
+    @apply bg-white rounded-2xl p-8 shadow-service border border-white transition-all duration-500 hover:shadow-service-hover hover:-translate-y-2;
+  }
+
+  .service-card-featured {
+    @apply bg-rio-gradient text-white rounded-2xl p-8 shadow-xl transition-all duration-500 hover:shadow-2xl hover:-translate-y-2;
+  }
+
+  .btn-primary {
+    @apply px-10 py-4 bg-rio-purple text-white font-bold rounded-full transition-all duration-300 transform active:scale-95 shadow-lg hover:shadow-rio-purple/20 hover:bg-rio-pink;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-rio-bg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-rio-purple rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-rio-pink;
+}
