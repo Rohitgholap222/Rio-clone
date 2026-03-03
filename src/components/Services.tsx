@@ -1,5 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import React from 'react';
 
 const services = [
     {
@@ -54,7 +54,7 @@ const Services: React.FC = () => {
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    className="text-5xl font-[900] text-rio-dark mt-4 tracking-tighter"
+                    className="text-4xl font-[900] text-rio-dark mt-4 tracking-tighter"
                 >
                     Solutions that <span className="gradient-text">scale.</span>
                 </motion.h2>
@@ -70,13 +70,13 @@ const Services: React.FC = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.7, delay: index * 0.15 }}
                             className={`relative p-12 rounded-[50px] transition-all duration-500 hover:-translate-y-4 group ${service.featured
-                                    ? "bg-rio-gradient text-white shadow-[0_40px_100px_-20px_rgba(182,53,140,0.3)]"
-                                    : "bg-white text-rio-dark shadow-[0_40px_100px_-30px_rgba(0,0,0,0.05)] hover:shadow-2xl border border-gray-50"
+                                ? "bg-rio-gradient text-white shadow-[0_40px_100px_-20px_rgba(182,53,140,0.3)]"
+                                : "bg-white text-rio-dark shadow-[0_40px_100px_-30px_rgba(0,0,0,0.05)] hover:shadow-2xl border border-gray-50"
                                 }`}
                         >
                             <div className="text-4xl mb-8 transform group-hover:scale-110 transition-transform duration-500">{service.icon}</div>
 
-                            <h3 className={`text-2xl font-[900] mb-10 tracking-tight pb-4 border-b ${service.featured ? 'border-white/20' : 'border-gray-100'
+                            <h3 className={`text-xl font-[900] mb-10 tracking-tight pb-4 border-b ${service.featured ? 'border-white/20' : 'border-gray-100'
                                 }`}>
                                 {service.title}
                             </h3>

@@ -1,5 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import React from 'react';
 
 const projects = [
     {
@@ -41,7 +41,7 @@ const Works: React.FC = () => {
                     <motion.h1
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        className="text-6xl font-[950] text-rio-dark mb-6 tracking-tighter"
+                        className="text-5xl font-[950] text-rio-dark mb-6 tracking-tighter"
                     >
                         WORKS
                     </motion.h1>
@@ -85,7 +85,7 @@ const Works: React.FC = () => {
 
                             {/* Card Bottom - Modern Info Cluster */}
                             <div className="text-center px-4">
-                                <h3 className="text-3xl font-[900] text-rio-dark mb-2 tracking-tight transition-colors group-hover:text-rio-purple">{project.title}</h3>
+                                <h3 className="text-2xl font-[900] text-rio-dark mb-2 tracking-tight transition-colors group-hover:text-rio-purple">{project.title}</h3>
                                 <p className="text-[12px] font-bold text-gray-400 uppercase tracking-[0.2em] mb-8">{project.category}</p>
 
                                 <div className="inline-block relative">
@@ -105,7 +105,7 @@ const Works: React.FC = () => {
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        className="text-5xl font-[900] text-rio-dark mb-12 tracking-tighter"
+                        className="text-4xl font-[900] text-rio-dark mb-12 tracking-tighter"
                     >
                         LET'S WORK <span className="gradient-text">TOGETHER</span>
                     </motion.h2>

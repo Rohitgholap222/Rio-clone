@@ -1,5 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
+import React from 'react';
 
 const Testimonials: React.FC = () => {
     return (
@@ -12,7 +12,7 @@ const Testimonials: React.FC = () => {
                         viewport={{ once: true }}
                         className="relative z-10"
                     >
-                        <h2 className="text-4xl lg:text-5xl font-extrabold text-rio-text mb-4">WHAT PEOPLE SAYS</h2>
+                        <h2 className="text-3xl lg:text-4xl font-extrabold text-rio-text mb-4">WHAT PEOPLE SAYS</h2>
                         <div className="w-20 h-1 bg-rio-pink"></div>
                     </motion.div>
 
@@ -30,7 +30,7 @@ const Testimonials: React.FC = () => {
                                 "As a premium website design company, This company ensures the best quality website design to help client business succeed."
                             </p>
                             <div>
-                                <h4 className="text-2xl font-bold">Natasha, Manager</h4>
+                                <h4 className="text-xl font-bold">Natasha, Manager</h4>
                                 <p className="text-white/80">Business Development Spike Consulting</p>
                             </div>
                         </div>

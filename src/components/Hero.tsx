@@ -1,6 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
+import { motion } from 'framer-motion';
+import React from 'react';
 
 const Hero: React.FC = () => {
     const containerVariants: Variants = {
@@ -58,7 +58,7 @@ const Hero: React.FC = () => {
 
                         <motion.h1
                             variants={itemVariants}
-                            className="text-6xl lg:text-[88px] font-[900] text-rio-dark leading-[1.05] mb-8 tracking-tighter"
+                            className="text-5xl lg:text-7xl font-[900] text-rio-dark leading-[1.05] mb-8 tracking-tighter"
                         >
                             Your Creative <br />
                             <span className="brush-stroke">Partner!</span>
@@ -81,7 +81,7 @@ const Hero: React.FC = () => {
                         className="relative lg:block"
                     >
                         {/* Main Illustration */}
-                        <div className="relative z-10 w-full max-w-[600px] mx-auto">
+                        <div className="relative z-10 w-full max-w-[500px] mx-auto">
                             <img
                                 src="https://img.freepik.com/free-vector/creative-team-concept-illustration_114360-3743.jpg"
                                 alt="Creative Partner"

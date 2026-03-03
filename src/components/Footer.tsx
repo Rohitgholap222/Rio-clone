@@ -1,6 +1,6 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Mail, Phone, Twitter } from 'lucide-react';
+import React from 'react';
 
 const socialLinks = [
     { icon: Facebook, url: 'https://www.facebook.com/RioIDS.India#' },
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
                             <span className="block text-[11px] font-bold tracking-widest text-[#5e5e5e]">DESIGN STUDIO</span>
                         </div>
                     </div>
-                    <h2 className="text-2xl font-extrabold text-rio-dark tracking-wider">GET IN TOUCH</h2>
+                    <h2 className="text-xl font-extrabold text-rio-dark tracking-wider">GET IN TOUCH</h2>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20 text-center">

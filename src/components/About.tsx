@@ -1,5 +1,5 @@
-import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import React from 'react';
 
 const About: React.FC = () => {
     const { scrollYProgress } = useScroll();
@@ -53,7 +53,7 @@ const About: React.FC = () => {
                             <span className="inline-block px-4 py-1 rounded-full bg-rio-pink/10 text-rio-pink text-[10px] font-bold tracking-[0.2em] uppercase mb-6">
                                 The Studio Identity
                             </span>
-                            <h2 className="text-5xl font-[900] text-rio-dark leading-tight mb-8 tracking-tighter">
+                            <h2 className="text-4xl font-[900] text-rio-dark leading-tight mb-8 tracking-tighter">
                                 Whatever you do, <br />
                                 <span className="gradient-text">do it well.</span>
                             </h2>
