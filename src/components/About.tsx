@@ -9,8 +9,8 @@ const About: React.FC = () => {
     return (
         <section id="about" className="relative py-32 bg-white overflow-hidden">
             {/* Creative Background Shapes */}
-            <motion.div style={{ y: y1 }} className="absolute top-1/4 -right-20 w-80 h-80 bg-rio-pink/5 rounded-full blur-3xl -z-0" />
-            <motion.div style={{ y: y2 }} className="absolute bottom-1/4 -left-20 w-96 h-96 bg-rio-purple/5 rounded-full blur-3xl -z-0" />
+            <motion.div style={{ y: y1 }} className="absolute top-1/4 -right-20 w-80 h-80 bg-rio-pink/5 rounded-full blur-3xl z-0" />
+            <motion.div style={{ y: y2 }} className="absolute bottom-1/4 -left-20 w-96 h-96 bg-rio-purple/5 rounded-full blur-3xl z-0" />
 
             <div className="container relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
@@ -27,7 +27,7 @@ const About: React.FC = () => {
                             <img
                                 src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&q=80&w=1200"
                                 alt="Studio Environment"
-                                className="w-full h-[600px] object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100"
+                                className="w-full h-[500px] object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100"
                             />
                         </div>
 
@@ -53,7 +53,7 @@ const About: React.FC = () => {
                             <span className="inline-block px-4 py-1 rounded-full bg-rio-pink/10 text-rio-pink text-[10px] font-bold tracking-[0.2em] uppercase mb-6">
                                 The Studio Identity
                             </span>
-                            <h2 className="text-4xl font-[900] text-rio-dark leading-tight mb-8 tracking-tighter">
+                            <h2 className="text-4xl font-black text-rio-dark leading-tight mb-8 tracking-tighter">
                                 Whatever you do, <br />
                                 <span className="gradient-text">do it well.</span>
                             </h2>

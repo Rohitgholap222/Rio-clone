@@ -54,7 +54,7 @@ const Services: React.FC = () => {
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    className="text-4xl font-[900] text-rio-dark mt-4 tracking-tighter"
+                    className="text-4xl font-black text-rio-dark mt-4 tracking-tighter"
                 >
                     Solutions that <span className="gradient-text">scale.</span>
                 </motion.h2>
@@ -76,7 +76,7 @@ const Services: React.FC = () => {
                         >
                             <div className="text-4xl mb-8 transform group-hover:scale-110 transition-transform duration-500">{service.icon}</div>
 
-                            <h3 className={`text-xl font-[900] mb-10 tracking-tight pb-4 border-b ${service.featured ? 'border-white/20' : 'border-gray-100'
+                            <h3 className={`text-xl font-black mb-10 tracking-tight pb-4 border-b ${service.featured ? 'border-white/20' : 'border-gray-100'
                                 }`}>
                                 {service.title}
                             </h3>
@@ -96,7 +96,7 @@ const Services: React.FC = () => {
                             <div className="mt-12 overflow-hidden">
                                 <motion.button
                                     whileTap={{ scale: 0.95 }}
-                                    className={`text-[12px] font-[900] uppercase tracking-[0.2em] transform transition-transform duration-300 group-hover:translate-x-2 ${service.featured ? 'text-white' : 'text-rio-purple'
+                                    className={`text-[12px] font-black uppercase tracking-[0.2em] transform transition-transform duration-300 group-hover:translate-x-2 ${service.featured ? 'text-white' : 'text-rio-purple'
                                         }`}
                                 >
                                     Explore Service →
@@ -104,7 +104,7 @@ const Services: React.FC = () => {
                             </div>
 
                             {/* Decorative element for cards */}
-                            <div className={`absolute bottom-8 right-8 text-8xl font-black opacity-[0.03] select-none -z-0 ${service.featured ? 'text-white' : 'text-rio-dark'
+                            <div className={`absolute bottom-8 right-8 text-8xl font-black opacity-[0.03] select-none z-0 ${service.featured ? 'text-white' : 'text-rio-dark'
                                 }`}>
                                 0{index + 1}
                             </div>

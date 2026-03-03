@@ -70,11 +70,11 @@ const Works: React.FC = () => {
                             className="group cursor-pointer"
                         >
                             {/* Card Top - The Visual Presentation */}
-                            <div className="relative aspect-[16/11] rounded-[48px] overflow-hidden mb-8 transition-all duration-700 group-hover:shadow-[0_45px_100px_-25px_rgba(0,0,0,0.15)] group-hover:-translate-y-3">
+                            <div className="relative aspect-video rounded-[48px] overflow-hidden mb-8 transition-all duration-700 group-hover:shadow-[0_45px_100px_-25px_rgba(0,0,0,0.15)] group-hover:-translate-y-3">
                                 {/* Dynamic Gradient Overlay */}
                                 <div className={`absolute inset-0 bg-gradient-to-br ${project.color} opacity-90 transition-opacity duration-500`}></div>
 
-                                <div className="absolute inset-0 flex items-center justify-center p-12">
+                                <div className="absolute inset-0 flex items-center justify-center p-16">
                                     <img
                                         src={project.image}
                                         alt={project.title}

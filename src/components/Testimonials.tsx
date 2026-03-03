@@ -23,9 +23,9 @@ const Testimonials: React.FC = () => {
                         className="relative"
                     >
                         {/* Organic Blob Background */}
-                        <div className="absolute inset-0 bg-gradient-to-r from-rio-pink to-[#FF9800] opacity-80 blur-2xl rounded-full scale-110 pointer-events-none transform -rotate-12 translate-x-10"></div>
+                        <div className="absolute inset-0 bg-linear-to-r from-rio-pink to-[#FF9800] opacity-80 blur-2xl rounded-full scale-110 pointer-events-none transform -rotate-12 translate-x-10"></div>
 
-                        <div className="relative z-10 p-12 lg:p-16 bg-gradient-to-br from-rio-pink to-[#FF9800] rounded-[60px] text-white shadow-2xl">
+                        <div className="relative z-10 p-12 lg:p-16 bg-linear-to-br from-rio-pink to-[#FF9800] rounded-[60px] text-white shadow-2xl">
                             <p className="text-xl italic leading-relaxed mb-10">
                                 "As a premium website design company, This company ensures the best quality website design to help client business succeed."
                             </p>
